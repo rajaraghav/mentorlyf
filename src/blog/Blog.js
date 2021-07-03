@@ -229,7 +229,7 @@ export default class Blog extends React.Component {
                     </div>
                   </div>
                   <div>Mentor</div>
-                  <div>Prashant Kathuria</div>
+                  <div style={{ fontWeight: "bold" }}>Prashant Kathuria</div>
                   <div>Data Scientist at Upgrad</div>
                   <div style={{ marginTop: ".35rem" }}>
                     Prashant is a data scientist with 10+ years of experience in
@@ -244,7 +244,8 @@ export default class Blog extends React.Component {
                   style={{
                     backgroundColor: "black",
                     width: "100%",
-                    fontSize: "1.6rem",
+                    color: "white",
+                    fontSize: "1rem",
                   }}
                   variant="contained"
                 >
