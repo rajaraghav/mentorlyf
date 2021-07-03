@@ -13,44 +13,6 @@ import {
   SupervisorAccountRounded,
 } from "@material-ui/icons";
 
-const useStyles = makeStyles((theme) => ({
-  mainGrid: {
-    marginTop: theme.spacing(3),
-  },
-  card: {
-    maxWidth: 300,
-    margin: "auto",
-    transition: "0.3s",
-    boxShadow: "0 8px 40px -12px rgba(0,0,0,0.3)",
-    "&:hover": {
-      boxShadow: "0 16px 70px -12.125px rgba(0,0,0,0.3)",
-    },
-  },
-  media: {
-    paddingTop: "56.25%",
-  },
-  content: {
-    textAlign: "left",
-    padding: theme.spacing.unit * 3,
-  },
-  divider: {
-    margin: `${theme.spacing.unit * 3}px 0`,
-  },
-  heading: {
-    fontWeight: "bold",
-  },
-  subheading: {
-    lineHeight: 1.8,
-  },
-  avatar: {
-    display: "inline-block",
-    border: "2px solid white",
-    "&:not(:first-of-type)": {
-      marginLeft: -theme.spacing.unit,
-    },
-  },
-}));
-
 const faces = [
   "https://i.ibb.co/t3PtS2Z/main-thumb-35164-200-mzeuozkmsoauksecixrxpkhgnnaztwyh.jpg",
 ];
@@ -249,6 +211,7 @@ export default class Blog extends React.Component {
                     <img
                       src={faces[0]}
                       height="100px"
+                      alt="avatar"
                       style={{ borderRadius: "50%" }}
                     />
                     <div
@@ -299,9 +262,12 @@ export default class Blog extends React.Component {
                   </div>
                 </div>
                 <Button
-                  style={{ width: "100%", fontSize: "1.6rem" }}
+                  style={{
+                    backgroundColor: "black",
+                    width: "100%",
+                    fontSize: "1.6rem",
+                  }}
                   variant="contained"
-                  color="primary"
                 >
                   Consult now
                 </Button>
