@@ -153,7 +153,7 @@ export default class Blog extends React.Component {
         <CssBaseline />
         <Container maxWidth="lg">
           <Header title="" sections={sections} />
-          <main>
+          <main style={{ marginTop: "3rem" }}>
             <Typography variant="h4" component="h2">
               Explore Career in Data Science
             </Typography>
@@ -161,26 +161,26 @@ export default class Blog extends React.Component {
               style={{
                 justifyContent: "space-between",
                 display: "flex",
+                flexWrap: "wrap",
                 margin: "2rem 0",
+                rowGap: "2rem",
               }}
             >
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube-nocookie.com/embed/de7ZUb1fH3s?autoplay=1"
-                title="Career in data science"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
               <div
-                style={{
-                  width: "50%",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "space-between",
-                }}
+                className="mentor__container"
+                style={{ textAlign: "center" }}
               >
+                <iframe
+                  width="100%"
+                  className="mentor_video"
+                  src="https://www.youtube-nocookie.com/embed/de7ZUb1fH3s?autoplay=1"
+                  title="Career in data science"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="mentor__container">
                 <div className="">
                   <div
                     style={{
@@ -245,6 +245,7 @@ export default class Blog extends React.Component {
                     backgroundColor: "black",
                     width: "100%",
                     color: "white",
+                    marginTop: "1rem",
                     fontSize: "1rem",
                   }}
                   variant="contained"

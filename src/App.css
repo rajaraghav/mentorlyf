@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.mentor__container {
+  width: 49%;
+}
+@media screen and (max-width: 1178px) {
+  .mentor__container {
+    width: 100%;
+  }
+}
+.mentor_video {
+  height: 100%;
+}
+@media screen and (max-width: 1178px) {
+  .mentor_video {
+    height: 400px;
+  }
+}
